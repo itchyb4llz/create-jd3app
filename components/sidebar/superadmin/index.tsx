@@ -16,6 +16,7 @@ import NavPrimary from './primary'
 import NavUser from './user'
 import NavFooter from './footer'
 import Image from 'next/image'
+import NavWorkforce from './workforce'
 
 export default function SuperadminSidebar({ user, ...props }: SidebarProps) {
   return (
@@ -40,6 +41,7 @@ export default function SuperadminSidebar({ user, ...props }: SidebarProps) {
       </SidebarHeader>
       <SidebarContent className='hide-scrollbar'>
         <NavPrimary items={links.primary} />
+        <NavWorkforce items={links.workforce} className='-mt-4' />
         <NavFooter items={links.footer} className='mt-auto' />
       </SidebarContent>
       <SidebarFooter>

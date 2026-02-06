@@ -1,12 +1,15 @@
 import {
   IconBriefcase2,
+  IconBuilding,
   IconBuildings,
+  IconCalendarTime,
   IconChartPie,
-  IconCoins,
-  IconFolder,
+  IconClock,
   IconInfoCircle,
+  IconListCheck,
   IconLogs,
   IconSettings,
+  IconUserCheck,
   IconUsers
 } from '@tabler/icons-react'
 
@@ -16,99 +19,6 @@ export const links = {
       title: 'Dashboard',
       url: '/dashboard',
       icon: IconChartPie
-    },
-    {
-      title: 'Inventory',
-      url: '/dashboard/inventory',
-      icon: IconFolder,
-      items: [
-        {
-          title: 'Overview',
-          url: '/dashboard/inventory'
-        },
-        {
-          title: 'Product List',
-          url: '/dashboard/inventory/product'
-        },
-        {
-          title: 'Category List',
-          url: '/dashboard/inventory/category'
-        },
-        {
-          title: 'Supplier List',
-          url: '/dashboard/inventory/supplier'
-        }
-      ]
-    },
-    {
-      title: 'Sales',
-      url: '/dashboard/sales',
-      icon: IconCoins,
-      items: [
-        {
-          title: 'Overview',
-          url: '/dashboard/sales'
-        },
-        {
-          title: 'Point of Sale',
-          url: '/dashboard/sales/point-of-sale'
-        },
-        {
-          title: 'Customer List',
-          url: '/dashboard/sales/customer'
-        },
-        {
-          title: 'Discount List',
-          url: '/dashboard/sales/discount'
-        },
-        {
-          title: 'Invoice List',
-          url: '/dashboard/sales/invoice'
-        },
-        {
-          title: 'Payment List',
-          url: '/dashboard/sales/payment'
-        },
-        {
-          title: 'Sales Order',
-          url: '/dashboard/sales/sales-order'
-        }
-      ]
-    },
-    {
-      title: 'HR',
-      url: '/dashboard/hr',
-      icon: IconBriefcase2,
-      items: [
-        {
-          title: 'Overview',
-          url: '/dashboard/hr'
-        },
-        {
-          title: 'Daily Time Record',
-          url: '/dashboard/hr/daily-time-record'
-        },
-        {
-          title: 'Employee List',
-          url: '/dashboard/hr/employee'
-        },
-        {
-          title: 'Employee Shift List',
-          url: '/dashboard/hr/employee-shift'
-        },
-        {
-          title: 'Department List',
-          url: '/dashboard/hr/department'
-        },
-        {
-          title: 'Shift List',
-          url: '/dashboard/hr/shift'
-        },
-        {
-          title: 'Daily Attendance',
-          url: '/dashboard/hr/daily-attendance'
-        }
-      ]
     },
     {
       title: 'Branches',
@@ -124,6 +34,44 @@ export const links = {
       title: 'User Logs',
       url: '/dashboard/user-logs',
       icon: IconLogs
+    }
+  ],
+
+  workforce: [
+    {
+      title: 'Overview',
+      url: '/dashboard/workforce',
+      icon: IconBriefcase2
+    },
+    {
+      title: 'Daily Time Record',
+      url: '/dashboard/workforce/daily-time-record',
+      icon: IconClock
+    },
+    {
+      title: 'Employee List',
+      url: '/dashboard/workforce/employees',
+      icon: IconUsers
+    },
+    {
+      title: 'Employee Shift List',
+      url: '/dashboard/workforce/shifts',
+      icon: IconCalendarTime
+    },
+    {
+      title: 'Departments',
+      url: '/dashboard/workforce/departments',
+      icon: IconBuilding
+    },
+    {
+      title: 'Shift List',
+      url: '/dashboard/workforce/shift-list',
+      icon: IconListCheck
+    },
+    {
+      title: 'Daily Attendance',
+      url: '/dashboard/workforce/daily-attendance',
+      icon: IconUserCheck
     }
   ],
   footer: [

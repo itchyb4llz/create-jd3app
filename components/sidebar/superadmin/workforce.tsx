@@ -11,9 +11,11 @@ import {
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import type { Icon } from '@tabler/icons-react'
+import { ComponentPropsWithoutRef } from 'react'
 
-export default function NavPrimary({
-  items
+export default function NavWorkforce({
+  items,
+  ...props
 }: {
   items: {
     title: string
@@ -21,12 +23,12 @@ export default function NavPrimary({
     icon?: Icon
     items?: { title: string; url: string }[]
   }[]
-}) {
+} & ComponentPropsWithoutRef<typeof SidebarGroup>) {
   const pathname = usePathname()
 
   return (
-    <SidebarGroup>
-      <SidebarGroupLabel>Home</SidebarGroupLabel>
+    <SidebarGroup {...props}>
+      <SidebarGroupLabel>Workforce Management</SidebarGroupLabel>
       <SidebarGroupContent className='flex flex-col gap-2'>
         <SidebarMenu>
           {items.map(item => {
